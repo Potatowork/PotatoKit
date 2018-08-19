@@ -7,13 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1306C21F2125A24A009444D8 /* FilePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1306C21E2125A24A009444D8 /* FilePath.swift */; };
+		1306C2462125B753009444D8 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1306C2452125B753009444D8 /* UITableViewCell+Extension.swift */; };
 		1311AE9121247BAF00D93E14 /* PotatoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1311AE8F21247BAF00D93E14 /* PotatoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13B4DEB5212887300075C361 /* NSAttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B4DEB4212887300075C361 /* NSAttributedString+Extension.swift */; };
+		13B4DEB7212891780075C361 /* EmptyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B4DEB6212891780075C361 /* EmptyError.swift */; };
+		13C5B99021292E1100F4B325 /* PKTextAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C5B98F21292E1100F4B325 /* PKTextAttachment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1306C21E2125A24A009444D8 /* FilePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePath.swift; sourceTree = "<group>"; };
+		1306C2452125B753009444D8 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
 		1311AE8C21247BAF00D93E14 /* PotatoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PotatoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1311AE8F21247BAF00D93E14 /* PotatoKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PotatoKit.h; sourceTree = "<group>"; };
 		1311AE9021247BAF00D93E14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13B4DEB4212887300075C361 /* NSAttributedString+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Extension.swift"; sourceTree = "<group>"; };
+		13B4DEB6212891780075C361 /* EmptyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyError.swift; sourceTree = "<group>"; };
+		13C5B98F21292E1100F4B325 /* PKTextAttachment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKTextAttachment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +37,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1306C21D2125A239009444D8 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1306C21E2125A24A009444D8 /* FilePath.swift */,
+				1306C2452125B753009444D8 /* UITableViewCell+Extension.swift */,
+				13B4DEB4212887300075C361 /* NSAttributedString+Extension.swift */,
+				13C5B98F21292E1100F4B325 /* PKTextAttachment.swift */,
+				13B4DEB6212891780075C361 /* EmptyError.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		1311AE8221247BAF00D93E14 = {
 			isa = PBXGroup;
 			children = (
@@ -46,6 +68,7 @@
 		1311AE8E21247BAF00D93E14 /* PotatoKit */ = {
 			isa = PBXGroup;
 			children = (
+				1306C21D2125A239009444D8 /* Source */,
 				1311AE8F21247BAF00D93E14 /* PotatoKit.h */,
 				1311AE9021247BAF00D93E14 /* Info.plist */,
 			);
@@ -95,6 +118,7 @@
 				TargetAttributes = {
 					1311AE8B21247BAF00D93E14 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -130,6 +154,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13B4DEB7212891780075C361 /* EmptyError.swift in Sources */,
+				1306C21F2125A24A009444D8 /* FilePath.swift in Sources */,
+				1306C2462125B753009444D8 /* UITableViewCell+Extension.swift in Sources */,
+				13C5B99021292E1100F4B325 /* PKTextAttachment.swift in Sources */,
+				13B4DEB5212887300075C361 /* NSAttributedString+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +289,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -277,6 +307,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.person.PotatoKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +317,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
